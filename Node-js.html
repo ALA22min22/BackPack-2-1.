@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js Interview Questions - HR Backpack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        .qa {
+            background: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #68a063;
+        }
+
+        .qa strong {
+            color: #2c3e50;
+        }
+
+        .border {
+            border-bottom: 5px dotted black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Node.js Interview Questions & Answers</h1>
+    <p><strong>Role:</strong> IT Company Hiring Manager (HR)</p>
+
+    <!-- Basic Server -->
+    <h2>Basic Server (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q1: What is Node.js?</strong>
+        <p>Node.js is a JavaScript runtime built on Chrome’s V8 engine. It allows JavaScript to run on the server side.
+        </p>
+    </div>
+
+    <div class="qa">
+        <strong>Q2: What is a server in Node.js?</strong>
+        <p>A server in Node.js listens for client requests and sends responses. It is commonly created using the http
+            module.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q3: How do you create a basic server in Node.js?</strong>
+        <p>A basic server is created using the http.createServer() method, which handles incoming requests.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q4: What is the role of the http module?</strong>
+        <p>The http module allows Node.js to create web servers and handle HTTP requests and responses.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q5: What is the difference between Node.js and a traditional server?</strong>
+        <p>Node.js uses non-blocking, event-driven architecture, while traditional servers often use blocking threads.
+        </p>
+    </div>
+
+    <!-- File System -->
+    <h2>File System (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q6: What is the fs module in Node.js?</strong>
+        <p>The fs module is used to work with the file system. It allows reading, writing, updating, and deleting files.
+        </p>
+    </div>
+
+    <div class="qa">
+        <strong>Q7: Difference between synchronous and asynchronous file operations?</strong>
+        <p>Synchronous operations block code execution, while asynchronous operations do not block and improve
+            performance.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q8: How do you read a file in Node.js?</strong>
+        <p>Files can be read using readFile() for async or readFileSync() for synchronous operations.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q9: How do you write data to a file?</strong>
+        <p>Data is written using writeFile() or appendFile() methods provided by the fs module.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q10: Why is asynchronous file handling preferred?</strong>
+        <p>It prevents blocking the main thread, allowing better performance and responsiveness.</p>
+    </div>
+
+    <!-- Middleware -->
+    <h2>Middleware (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q11: What is middleware in Node.js?</strong>
+        <p>Middleware is a function that runs between request and response. It modifies or processes requests.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q12: Where is middleware commonly used?</strong>
+        <p>Middleware is widely used in Express.js for logging, authentication, and request validation.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q13: What are common types of middleware?</strong>
+        <p>Common middleware types include application-level, router-level, error-handling, and built-in middleware.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q14: What is next() in middleware?</strong>
+        <p>The next() function passes control to the next middleware in the request-response cycle.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q15: Why is middleware important?</strong>
+        <p>Middleware helps organize code, reuse logic, and manage requests efficiently.</p>
+    </div>
+
+    <!-- Single Threaded Application -->
+    <h2>Single Threaded Application (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q16: Is Node.js single-threaded?</strong>
+        <p>Yes, Node.js uses a single-threaded event loop to handle multiple requests efficiently.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q17: How does Node.js handle multiple requests?</strong>
+        <p>Node.js uses an event-driven, non-blocking model that allows handling many requests concurrently.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q18: What is the event loop?</strong>
+        <p>The event loop manages asynchronous operations and executes callbacks when tasks are completed.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q19: What are the advantages of single-threaded architecture?</strong>
+        <p>It uses less memory, avoids thread management issues, and is highly scalable.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q20: What are the limitations of single-threaded Node.js?</strong>
+        <p>CPU-intensive tasks can block the event loop and reduce performance.</p>
+    </div>
+
+    <div class="border"></div>
+
+</body>
+
+</html>

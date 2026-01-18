@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MongoDB Interview Questions - HR Backpack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        .qa {
+            background: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #4DB33D;
+        }
+
+        .qa strong {
+            color: #2c3e50;
+        }
+
+        .border {
+            border-bottom: 5px dotted black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MongoDB Interview Questions & Answers</h1>
+    <p><strong>Role:</strong> IT Company Hiring Manager (HR)</p>
+
+    <!-- CRUD Operations -->
+    <h2>CRUD Operations (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q1: What is CRUD in MongoDB?</strong>
+        <p>CRUD stands for Create, Read, Update, and Delete. These are the basic operations used to manage data in
+            MongoDB collections.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q2: How do you insert data in MongoDB?</strong>
+        <p>Data is inserted using insertOne() or insertMany() methods. These methods add documents into a collection.
+        </p>
+    </div>
+
+    <div class="qa">
+        <strong>Q3: How do you read data from MongoDB?</strong>
+        <p>Data is read using find() or findOne() methods. They retrieve documents based on given conditions.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q4: How do you update documents in MongoDB?</strong>
+        <p>Documents are updated using updateOne(), updateMany(), or replaceOne(). These methods modify existing data.
+        </p>
+    </div>
+
+    <div class="qa">
+        <strong>Q5: How do you delete documents in MongoDB?</strong>
+        <p>Documents are deleted using deleteOne() or deleteMany(). These methods remove data from a collection.</p>
+    </div>
+
+    <!-- Querying -->
+    <h2>Querying (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q6: What is a query in MongoDB?</strong>
+        <p>A query is used to retrieve specific data from a collection. It works like a filter based on conditions.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q7: What is the use of find() method?</strong>
+        <p>The find() method retrieves multiple documents that match a given condition from a collection.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q8: What are query operators?</strong>
+        <p>Query operators are special keywords like $gt, $lt, and $in. They help perform advanced filtering.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q9: What is projection in MongoDB?</strong>
+        <p>Projection is used to include or exclude specific fields in query results. It improves performance.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q10: What is sorting in MongoDB?</strong>
+        <p>Sorting arranges query results in ascending or descending order using the sort() method.</p>
+    </div>
+
+    <!-- Integration with Node.js -->
+    <h2>Integration with Node.js (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q11: How does MongoDB connect with Node.js?</strong>
+        <p>MongoDB connects with Node.js using drivers or libraries like Mongoose or the MongoDB native driver.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q12: What is Mongoose?</strong>
+        <p>Mongoose is an ODM library for MongoDB in Node.js. It provides schema-based data modeling.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q13: Why are schemas important in Mongoose?</strong>
+        <p>Schemas define the structure of documents. They help maintain data consistency and validation.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q14: How are asynchronous operations handled?</strong>
+        <p>MongoDB operations in Node.js are asynchronous and handled using callbacks, promises, or async/await.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q15: What is a model in Mongoose?</strong>
+        <p>A model is a wrapper around a schema. It is used to interact with the database collection.</p>
+    </div>
+
+    <!-- Indexing -->
+    <h2>Indexing in MongoDB (5 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q16: What is an index in MongoDB?</strong>
+        <p>An index improves query performance by allowing MongoDB to search data faster.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q17: Why are indexes important?</strong>
+        <p>Indexes reduce query execution time. Without indexes, MongoDB scans the entire collection.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q18: What types of indexes are available?</strong>
+        <p>Common indexes include single-field, compound, text, and unique indexes.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q19: What is a compound index?</strong>
+        <p>A compound index is created on multiple fields. It helps optimize queries using those fields together.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q20: Can indexes affect performance negatively?</strong>
+        <p>Yes, too many indexes can slow down insert and update operations because indexes also need updating.</p>
+    </div>
+
+    <div class="border"></div>
+
+</body>
+
+</html>

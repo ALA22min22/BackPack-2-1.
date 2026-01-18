@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React JS Interview Questions - HR Backpack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        .qa {
+            background: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #61dafb;
+        }
+
+        .qa strong {
+            color: #34495e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>React JS Interview Questions & Answers</h1>
+    <p><strong>Role:</strong> IT Company Hiring Manager (HR)</p>
+
+    <!-- React Lifecycle -->
+    <h2>React Lifecycle (6 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q1: What is the React component lifecycle?</strong>
+        <p>A React lifecycle is the series of phases a component goes through, such as mounting, updating, and
+            unmounting.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q2: What happens in the mounting phase?</strong>
+        <p>In the mounting phase, the component is created and inserted into the DOM for the first time.
+            During this phase, initial rendering happens and setup tasks can be performed.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q3: What is componentDidMount used for?</strong>
+        <p>It is used to perform side effects like API calls after the component is rendered.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q4: What is the updating phase?</strong>
+        <p>The updating phase occurs when props or state change and the component re-renders.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q5: What is componentWillUnmount?</strong>
+        <p>It is called before a component is removed from the DOM and is used for cleanup.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q6: How are lifecycle methods handled in functional components?</strong>
+        <p>They are handled using the useEffect hook instead of class-based lifecycle methods.</p>
+    </div>
+
+    <!-- Routing -->
+    <h2>Routing (6 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q7: What is routing in React?</strong>
+        <p>Routing allows navigation between different pages or components without reloading the page.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q8: Which library is commonly used for routing?</strong>
+        <p>React Router is the most commonly used library for routing in React applications.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q9: What is BrowserRouter?</strong>
+        <p>BrowserRouter uses the browser history API to keep the UI in sync with the URL.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q10: What is the Route component?</strong>
+        <p>Route is used to render a component when the URL path matches a specific route.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q11: What is Link used for?</strong>
+        <p>Link is used to navigate between routes without reloading the page.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q12: What is protected routing?</strong>
+        <p>Protected routing restricts access to certain routes based on authentication status.</p>
+    </div>
+
+    <!-- State Management -->
+    <h2>State Management (6 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q13: What is state in React?</strong>
+        <p>State is an object that stores dynamic data and controls component behavior.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q14: Difference between state and props?</strong>
+        <p>State is managed inside the component, while props are passed from parent to child.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q15: How do you update state?</strong>
+        <p>State is updated using the setState method or state updater functions.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q16: What is lifting state up?</strong>
+        <p>Lifting state up means moving state to a common parent component to share data.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q17: What is useState hook?</strong>
+        <p>useState is a hook that allows functional components to manage state.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q18: Why should state not be mutated directly?</strong>
+        <p>Direct mutation can cause unexpected behavior and prevent proper re-rendering.</p>
+    </div>
+
+    <!-- Forms in React -->
+    <h2>Forms in React (6 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q19: How are forms handled in React?</strong>
+        <p>Forms are handled using controlled components where form data is stored in state.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q20: What is a controlled component?</strong>
+        <p>A controlled component is an input element whose value is controlled by React state.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q21: What is an uncontrolled component?</strong>
+        <p>An uncontrolled component manages its own state using the DOM.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q22: How do you handle form submission?</strong>
+        <p>By using an onSubmit handler and preventing the default browser behavior.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q23: How do you handle multiple inputs?</strong>
+        <p>By using the name attribute and a single change handler.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q24: Why is validation important in forms?</strong>
+        <p>Validation ensures correct and secure data is submitted by the user.</p>
+    </div>
+
+    <!-- React Authentication -->
+    <h2>React Authentication (6 Questions)</h2>
+
+    <div class="qa">
+        <strong>Q25: What is authentication in React?</strong>
+        <p>Authentication verifies the identity of a user before allowing access.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q26: How is authentication commonly implemented?</strong>
+        <p>It is commonly implemented using JWT tokens or session-based authentication.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q27: What is JWT?</strong>
+        <p>JWT (JSON Web Token) is a secure token used to transmit user information.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q28: Where should tokens be stored?</strong>
+        <p>Tokens are usually stored in HTTP-only cookies or localStorage.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q29: What is role-based authentication?</strong>
+        <p>It restricts access to features based on user roles like admin or user.</p>
+    </div>
+
+    <div class="qa">
+        <strong>Q30: How do you protect routes in React?</strong>
+        <p>By using protected routes and checking authentication before rendering components.</p>
+    </div>
+
+</body>
+
+</html>
